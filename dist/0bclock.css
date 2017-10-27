@@ -40,34 +40,4 @@
   border: 10px solid #aaaaaa;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background: url("../img/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(200, 200, 200, 0.2);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 3px;
-  height: 497.77778px;
-  width: 800px;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=0bclock.css.map */

@@ -1,0 +1,37 @@
+@import '0bclock';
+
+$wrapper-width: 800px;
+$wrapper-height: $wrapper-width * 0.6222222222;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: url('../img/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+  background-color: rgba(200, 200, 200, 0.2);
+  backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+
+	border-radius: 3px;
+
+	height: $wrapper-height;
+	width: $wrapper-width;
+}

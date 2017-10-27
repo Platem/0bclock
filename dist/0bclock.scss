@@ -1,0 +1,55 @@
+$inner-color-off: rgba(0, 0, 0, 0);
+$inner-color-on: rgba(239, 60, 45, 1);
+$outer-color-off: rgba(170, 170, 170, 1);
+$outer-color-on: rgba(170, 170, 170, 1);
+
+.clock {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 3px;
+
+	.clock-section {
+		position: absolute;
+		float: left;
+		height: 90%;
+		width: 28%;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		&:first-child {
+			left: 4%;
+			transform: translate(0, -50%);
+		}
+
+		&:last-child {
+			left: 68%;
+			transform: translate(0, -50%);
+		}
+
+		.clock-circle {
+			float: left;
+			width: calc(50% - 20px);
+			height: calc(25% - 20px);
+			border-radius: 50%;
+
+			transition: background 0.4s ease;
+
+			background: $inner-color-off;
+			border: 10px solid $outer-color-off;
+
+			&.hide {
+				visibility: hidden;
+			}
+
+			&.active {
+				background: $inner-color-on;
+				border: 10px solid $outer-color-on;
+			}
+		}
+	}
+}
