@@ -32,6 +32,18 @@ body {
 
 	border-radius: 3px;
 
+	transition: all 0.3s ease;
+
 	height: $wrapper-height;
 	width: $wrapper-width;
+	
+	@media screen and (max-width: 1200px) {
+		height: ($wrapper-width / 1.3) * 0.6222222222;
+		width: $wrapper-width / 1.3
+	}
+
+	@media screen and (max-width: 800px) {
+		height: ($wrapper-width / 2) * 0.6222222222;
+		width: $wrapper-width / 2
+	}
 }

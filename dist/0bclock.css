@@ -28,7 +28,7 @@
   width: calc(50% - 20px);
   height: calc(25% - 20px);
   border-radius: 50%;
-  transition: background 0.4s ease;
+  transition: all 0.4s ease;
   background: transparent;
   border: 10px solid #aaaaaa;
 }

@@ -4,58 +4,48 @@
   width: 100%;
   top: 0;
   left: 0;
-  border-radius: 3px;
-}
-.clock .clock-section {
-  position: absolute;
-  float: left;
-  height: 90%;
-  width: 28%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.clock .clock-section:first-child {
-  left: 4%;
-  transform: translate(0, -50%);
-}
-.clock .clock-section:last-child {
-  left: 68%;
-  transform: translate(0, -50%);
-}
-.clock .clock-section .clock-circle {
-  float: left;
-  width: calc(50% - 20px);
-  height: calc(25% - 20px);
-  border-radius: 50%;
-  transition: background 0.4s ease;
-  background: transparent;
-  border: 10px solid #aaaaaa;
-}
-.clock .clock-section .clock-circle.hide {
-  visibility: hidden;
-}
-.clock .clock-section .clock-circle.active {
-  background: #ef3c2d;
-  border: 10px solid #aaaaaa;
-}
+  border-radius: 3px; }
+  .clock .clock-section {
+    position: absolute;
+    float: left;
+    height: 90%;
+    width: 28%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .clock .clock-section:first-child {
+      left: 4%;
+      transform: translate(0, -50%); }
+    .clock .clock-section:last-child {
+      left: 68%;
+      transform: translate(0, -50%); }
+    .clock .clock-section .clock-circle {
+      float: left;
+      width: calc(50% - 20px);
+      height: calc(25% - 20px);
+      border-radius: 50%;
+      transition: all 0.4s ease;
+      background: transparent;
+      border: 10px solid #aaaaaa; }
+      .clock .clock-section .clock-circle.hide {
+        visibility: hidden; }
+      .clock .clock-section .clock-circle.active {
+        background: #ef3c2d;
+        border: 10px solid #aaaaaa; }
 
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 html, body {
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 body {
   background: url("../img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 #wrapper {
   position: absolute;
@@ -66,8 +56,16 @@ body {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 3px;
+  transition: all 0.3s ease;
   height: 497.77778px;
-  width: 800px;
-}
+  width: 800px; }
+  @media screen and (max-width: 1200px) {
+    #wrapper {
+      height: 382.90598px;
+      width: 615.38462px; } }
+  @media screen and (max-width: 800px) {
+    #wrapper {
+      height: 248.88889px;
+      width: 400px; } }
 
 /*# sourceMappingURL=main.css.map */
